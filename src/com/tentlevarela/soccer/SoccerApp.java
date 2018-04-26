@@ -10,9 +10,11 @@ public class SoccerApp {
 				new ClassPathXmlApplicationContext("applicationContext.xml");
 
 		Team fcb = context.getBean("myTeam",Team.class);
-		
-		System.out.println( fcb.getInfo() );
-		System.out.println( fcb.getTrophies() );
+
+		System.out.println( fcb.getName() );
+		System.out.println( fcb.getStadium());
+		System.out.println( fcb.getCity() );
+
 		context.close();
 		
 	}

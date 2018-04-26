@@ -1,6 +1,6 @@
 package com.tentlevarela.soccer;
 
-public interface Team {
+public interface TeamService {
 	
 	public String getName();
 	public String getStadium();
