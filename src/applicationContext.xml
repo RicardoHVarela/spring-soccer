@@ -7,6 +7,8 @@
     http://www.springframework.org/schema/context
     http://www.springframework.org/schema/context/spring-context.xsd">
 
+	<!-- Load properties file -->
+	<context:property-placeholder location="classpath:fcb.properties"/>
 	
     <!-- Define your beans here -->
     
@@ -17,7 +19,9 @@
      
     <bean id="myTeam"
  		class="com.tentlevarela.soccer.Barcelona">
- 		<constructor-arg ref="fcb"></constructor-arg>
+ 		<property name="fcb" ref="fcb"></property>
+ 		<property name="bestPlayer" value="${fcb.bestPlayer}"></property>
+ 		<property name="trophies" value="${fcb.trophies}"></property>
  	</bean>
 
 

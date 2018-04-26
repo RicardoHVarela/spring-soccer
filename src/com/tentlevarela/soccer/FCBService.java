@@ -4,7 +4,7 @@ public class FCBService implements TeamService {
 
 	@Override
 	public String getName() {
-		return "FC Barcelona";
+		return "FC Barcelona 1989";
 	}
 
 	@Override
